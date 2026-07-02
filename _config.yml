@@ -6,6 +6,10 @@ url: "https://blue-horizons-partners.github.io"
 
 logo: "https://github.com/Blue-Horizons-Partners.png"
 
+contact:
+  email: "privacy@blue-horizons-partners.com"
+  address: "Blue Horizons Partners, United States"
+
 theme: minima
 
 minima:
