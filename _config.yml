@@ -1,4 +1,5 @@
 title: Blue Horizons Partners
+email: "contact@blue-horizons-partners.com"
 description: >-
   Blue Horizons Partners official website.
 baseurl: ""
@@ -7,8 +8,8 @@ url: "https://blue-horizons-partners.github.io"
 logo: "https://github.com/Blue-Horizons-Partners.png"
 
 contact:
-  email: "privacy@blue-horizons-partners.com"
-  address: "Blue Horizons Partners, United States"
+  email: "contact@blue-horizons-partners.com"
+  address: "Blue Horizons Partners"
 
 theme: minima
 
@@ -16,6 +17,8 @@ minima:
   skin: classic
   header_pages:
     - about.md
+  social_links:
+    linkedin: "https://www.linkedin.com/company/blue-horizons-partners"
 
 plugins:
   - jekyll-feed
