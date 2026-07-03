@@ -18,7 +18,7 @@ minima:
   header_pages:
     - about.md
   social_links:
-    linkedin: "https://www.linkedin.com/company/blue-horizons-partners"
+    linkedin: "https://www.linkedin.com/company/blue-horizons-partners-1"
 
 plugins:
   - jekyll-feed
