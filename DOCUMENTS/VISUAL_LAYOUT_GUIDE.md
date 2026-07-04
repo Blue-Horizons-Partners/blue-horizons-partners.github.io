@@ -1,4 +1,5 @@
 # Visual Layout Guide - Image Placement
+
 ## Blue Horizons Partners Website with Minimal Mistakes Theme
 
 ---
@@ -46,6 +47,7 @@
 ```
 
 **Images Needed:**
+
 1. **Logo** (88×88px) - Top left header
 2. **Hero Banner** (1280×720px) - Full-width background with overlay
 3. **Feature Image 1** (600×400px) - Consulting
@@ -90,6 +92,7 @@
 ```
 
 **Images Needed:**
+
 1. **Logo** (88×88px) - Top left header
 2. **About Header** (1280×720px) - Page header with overlay
 3. **Bio Photo** (200×200px) - Left sidebar
@@ -131,10 +134,11 @@
 ```
 
 **Images Needed:**
+
 1. **Logo** (88×88px) - Top left header
 2. **Services Header** (1280×720px) - Page header with overlay
 
-*Optional: Add individual service images (800×600px each) if you want visuals*
+_Optional: Add individual service images (800×600px each) if you want visuals_
 
 ---
 
@@ -202,6 +206,7 @@ When someone shares your site on Facebook, LinkedIn, or Twitter:
 ```
 
 **Image Needed:**
+
 - **OG Image** (1200×630px) with your branding
 
 ---
@@ -209,11 +214,12 @@ When someone shares your site on Facebook, LinkedIn, or Twitter:
 ## Image Hierarchy & Priority
 
 ### Critical Path (Can't Launch Without):
+
 ```
 1. Logo (88×88px)
    └─> Appears on every single page in header
 
-2. Bio Photo (200×200px)  
+2. Bio Photo (200×200px)
    └─> Shows in sidebar on About and blog posts
 
 3. OG Image (1200×630px)
@@ -224,6 +230,7 @@ When someone shares your site on Facebook, LinkedIn, or Twitter:
 ```
 
 ### Important (Should Have for Professional Look):
+
 ```
 5. About Header (1280×720px)
    └─> Makes About page more engaging
@@ -236,6 +243,7 @@ When someone shares your site on Facebook, LinkedIn, or Twitter:
 ```
 
 ### Optional (Can Add Later):
+
 ```
 8. Contact Header (1280×720px)
    └─> Can use solid color overlay instead
@@ -254,6 +262,7 @@ When someone shares your site on Facebook, LinkedIn, or Twitter:
 Instead of using images for every header, you can use color overlays:
 
 ### Solid Color Overlay:
+
 ```yaml
 header:
   overlay_color: "#5e616c"  # Dark gray
@@ -262,6 +271,7 @@ header:
 ```
 
 ### Image with Color Filter:
+
 ```yaml
 header:
   overlay_image: /assets/images/hero-banner.jpg
@@ -276,21 +286,22 @@ header:
 
 ## Image Aspect Ratios Quick Reference
 
-| Use Case | Recommended Ratio | Example Dimensions |
-|----------|-------------------|-------------------|
-| Logo | 1:1 (square) | 88×88px |
-| Bio Photo | 1:1 (square) | 200×200px |
-| OG Image | 1.91:1 | 1200×630px |
-| Hero/Header | 16:9 | 1280×720px |
-| Feature Blocks | 3:2 | 600×400px |
-| Team Photos | 1:1 (square) | 300×300px |
-| Blog Teasers | 5:3 | 500×300px |
+| Use Case       | Recommended Ratio | Example Dimensions |
+| -------------- | ----------------- | ------------------ |
+| Logo           | 1:1 (square)      | 88×88px            |
+| Bio Photo      | 1:1 (square)      | 200×200px          |
+| OG Image       | 1.91:1            | 1200×630px         |
+| Hero/Header    | 16:9              | 1280×720px         |
+| Feature Blocks | 3:2               | 600×400px          |
+| Team Photos    | 1:1 (square)      | 300×300px          |
+| Blog Teasers   | 5:3               | 500×300px          |
 
 ---
 
 ## Before & After Comparison
 
 ### Current Site (Minima Theme):
+
 ```
 - Simple text header
 - Basic layout
@@ -299,6 +310,7 @@ header:
 ```
 
 ### After Migration (Minimal Mistakes):
+
 ```
 - Professional hero image with overlay text
 - Feature blocks with images
@@ -316,12 +328,14 @@ header:
 **Theme Skin:** `default` (Professional Gray/Blue)
 
 ### Design Approach:
+
 - **Skin:** "default" - Clean, professional appearance
 - **Images:** Modern office, cityscapes, business meetings, professional settings
 - **Hero overlay:** Dark gray or blue overlay with white text for readability
 - **Color palette:** White/gray with blue accents
 
 ### Why This Works:
+
 - Professional business appearance
 - High readability and accessibility
 - Works well with various image styles
@@ -333,31 +347,38 @@ header:
 ## Tips for Choosing/Creating Images
 
 ### Hero Banner (Homepage):
+
 ✅ **Good choices:**
+
 - Skyline with clouds (matches "horizons")
 - Business handshake with bokeh background
 - Modern office space with natural light
 - Abstract blue gradient (simple, on-brand)
 
 ❌ **Avoid:**
+
 - Busy images with lots of small details
 - Very dark images (text becomes hard to read)
 - Images with text already on them
 - Low resolution or pixelated images
 
 ### Feature Block Images:
+
 ✅ **Good choices:**
+
 - Icons or illustrations on solid backgrounds
 - Simple, clear photographs
 - Consistent style across all three
 - Related to the service/feature
 
 ❌ **Avoid:**
+
 - Random stock photos
 - Different styles mixing (photo + illustration)
 - Too much detail that gets lost when resized
 
 ### Professional Tips:
+
 1. **Consistency:** Use same style across all images
 2. **Contrast:** Ensure text remains readable on overlays
 3. **Brand colors:** Incorporate your brand colors subtly
@@ -378,7 +399,7 @@ Desktop View (1920px):
 - [ ] Logo is clear
 
 Tablet View (768px):
-- [ ] Images resize appropriately  
+- [ ] Images resize appropriately
 - [ ] Text remains readable
 - [ ] Feature blocks stack or shrink well
 
@@ -410,6 +431,6 @@ Then improve images over time as you get professional photography/design work do
 
 ---
 
-*For complete implementation instructions, see: [MINIMAL_MISTAKES_IMPLEMENTATION_PLAN.md](./MINIMAL_MISTAKES_IMPLEMENTATION_PLAN.md)*
+_For complete implementation instructions, see: [MINIMAL_MISTAKES_IMPLEMENTATION_PLAN.md](./MINIMAL_MISTAKES_IMPLEMENTATION_PLAN.md)_
 
-*Last Updated: 2026-07-04*
+_Last Updated: 2026-07-04_

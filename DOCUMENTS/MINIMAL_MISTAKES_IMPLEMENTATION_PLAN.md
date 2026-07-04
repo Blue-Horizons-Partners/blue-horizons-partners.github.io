@@ -1,9 +1,11 @@
 # Minimal Mistakes Theme - Implementation Plan
+
 ## Blue Horizons Partners Website
 
 ---
 
 ## Overview
+
 This plan outlines the migration from the current Minima theme to the Minimal Mistakes Jekyll theme, a professional, feature-rich theme perfect for business websites.
 
 ---
@@ -11,9 +13,11 @@ This plan outlines the migration from the current Minima theme to the Minimal Mi
 ## Phase 1: Setup & Installation (Day 1)
 
 ### 1.1 Update Dependencies
+
 **Files to modify:** `Gemfile`, `_config.yml`
 
 #### Update Gemfile:
+
 ```ruby
 source "https://rubygems.org"
 
@@ -21,7 +25,8 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 ```
 
-#### Update _config.yml:
+#### Update \_config.yml:
+
 ```yaml
 # Theme configuration
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
@@ -36,6 +41,7 @@ plugins:
 ```
 
 ### 1.2 Run Installation
+
 ```bash
 bundle update
 bundle install
@@ -45,7 +51,8 @@ bundle install
 
 ## Phase 2: Core Configuration (Day 1-2)
 
-### 2.1 Update _config.yml
+### 2.1 Update \_config.yml
+
 Replace current configuration with Minimal Mistakes settings:
 
 ```yaml
@@ -57,15 +64,15 @@ description: "Blue Horizons Partners is dedicated to helping organizations achie
 url: "https://blue-horizons-partners.github.io"
 baseurl: ""
 repository: "Blue-Horizons-Partners/blue-horizons-partners.github.io"
-logo: "/assets/images/logo.png"  # 88x88px recommended
+logo: "/assets/images/logo.png" # 88x88px recommended
 
 # Site Skin (color scheme)
-minimal_mistakes_skin: "default"  # Clean, professional look
+minimal_mistakes_skin: "default" # Clean, professional look
 
 # Site Author
 author:
   name: "Blue Horizons Partners"
-  avatar: "/assets/images/bio-photo.jpg"  # 200x200px recommended
+  avatar: "/assets/images/bio-photo.jpg" # 200x200px recommended
   bio: "Strategic partnerships and innovative solutions for your organization"
   location: "United States"
   links:
@@ -90,13 +97,13 @@ footer:
       url: "mailto:contact@blue-horizons-partners.com"
 
 # Social Sharing
-og_image: "/assets/images/og-image.jpg"  # 1200x630px recommended
+og_image: "/assets/images/og-image.jpg" # 1200x630px recommended
 twitter:
   username: # Add if you have Twitter
 
 # Analytics (optional)
 analytics:
-  provider: false  # Set to "google-gtag" if you want Google Analytics
+  provider: false # Set to "google-gtag" if you want Google Analytics
 
 # SEO
 social:
@@ -174,6 +181,7 @@ compress_html:
 ### 2.2 Create Required Data Files
 
 #### Create `_data/navigation.yml`:
+
 ```yaml
 main:
   - title: "Home"
@@ -189,6 +197,7 @@ main:
 ```
 
 #### Create `_data/ui-text.yml`:
+
 Copy from: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 (This provides localized UI text - just use the English section for now)
 
@@ -196,15 +205,18 @@ Copy from: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-te
 
 ## Phase 3: Page Migration (Day 2-3)
 
-### 3.1 Create _pages Directory
+### 3.1 Create \_pages Directory
+
 ```bash
 mkdir -p _pages
 ```
 
 ### 3.2 Convert Existing Pages
 
-#### Home Page (index.md → _pages/home.md or keep index.md)
+#### Home Page (index.md → \_pages/home.md or keep index.md)
+
 **Option A: Splash Layout (Recommended for business sites)**
+
 ```yaml
 ---
 layout: splash
@@ -218,7 +230,7 @@ header:
       url: "/about/"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Strategic Partnerships & Innovative Solutions"
-intro: 
+intro:
   - excerpt: 'Blue Horizons Partners is dedicated to helping organizations achieve their goals through strategic partnerships and innovative solutions.'
 feature_row:
   - image_path: /assets/images/feature-consulting.jpg
@@ -247,6 +259,7 @@ With years of experience in strategic partnerships and organizational developmen
 ```
 
 **Option B: Home Layout (Blog-style with recent posts)**
+
 ```yaml
 ---
 layout: home
@@ -257,7 +270,8 @@ header:
 ---
 ```
 
-#### About Page (about.md → _pages/about.md)
+#### About Page (about.md → \_pages/about.md)
+
 ```yaml
 ---
 layout: single
@@ -299,7 +313,8 @@ We specialize in:
 Ready to work with us? [Contact us today](/contact/).
 ```
 
-#### Create Services Page (_pages/services.md)
+#### Create Services Page (\_pages/services.md)
+
 ```yaml
 ---
 layout: single
@@ -328,7 +343,8 @@ classes: wide
 [Contact us](/contact/) to learn how we can help your organization.
 ```
 
-#### Create Contact Page (_pages/contact.md)
+#### Create Contact Page (\_pages/contact.md)
+
 ```yaml
 ---
 layout: single
@@ -348,8 +364,8 @@ We'd love to hear from you. Reach out to discuss how Blue Horizons Partners can 
 
 ## Office Information
 
-Blue Horizons Partners  
-[Address Line 1]  
+Blue Horizons Partners
+[Address Line 1]
 [City, State ZIP]
 
 ---
@@ -357,7 +373,8 @@ Blue Horizons Partners
 *We typically respond within 24 hours during business days.*
 ```
 
-#### Update Privacy Policy (privacy-policy.md → _pages/privacy-policy.md)
+#### Update Privacy Policy (privacy-policy.md → \_pages/privacy-policy.md)
+
 ```yaml
 ---
 layout: single
@@ -365,7 +382,6 @@ title: "Privacy Policy"
 permalink: /privacy-policy/
 author_profile: false
 ---
-
 [Keep existing content]
 ```
 
@@ -374,6 +390,7 @@ author_profile: false
 ## Phase 4: Asset Organization (Day 3)
 
 ### 4.1 Create Directory Structure
+
 ```bash
 mkdir -p assets/images
 mkdir -p assets/css
@@ -381,7 +398,9 @@ mkdir -p assets/js
 ```
 
 ### 4.2 Image Organization
+
 Move/create images in `assets/images/`:
+
 - Logo and branding
 - Header/hero images
 - Feature images
@@ -389,7 +408,9 @@ Move/create images in `assets/images/`:
 - Service illustrations
 
 ### 4.3 Custom CSS (Optional)
+
 Create `assets/css/main.scss`:
+
 ```scss
 ---
 ---
@@ -410,11 +431,13 @@ Create `assets/css/main.scss`:
 ## Phase 5: Testing & Refinement (Day 4-5)
 
 ### 5.1 Local Testing
+
 ```bash
 bundle exec jekyll serve
 ```
 
 Visit http://localhost:4000 and test:
+
 - ✅ All pages load correctly
 - ✅ Navigation works
 - ✅ Images display properly
@@ -422,6 +445,7 @@ Visit http://localhost:4000 and test:
 - ✅ Links are functional
 
 ### 5.2 Refinement Checklist
+
 - [ ] Adjust color scheme (skin selection)
 - [ ] Fine-tune typography
 - [ ] Optimize images for web
@@ -434,12 +458,14 @@ Visit http://localhost:4000 and test:
 ## Phase 6: Deployment (Day 5)
 
 ### 6.1 GitHub Pages Configuration
+
 1. Ensure `_config.yml` has correct `url` and `repository`
 2. Commit all changes
 3. Push to GitHub
 4. Enable GitHub Pages in repository settings (if not already)
 
 ### 6.2 Post-Deployment Verification
+
 - [ ] Visit live site URL
 - [ ] Test all pages and links
 - [ ] Verify images load
@@ -452,19 +478,24 @@ Visit http://localhost:4000 and test:
 ## Optional Enhancements
 
 ### Blog Setup
+
 If you want to add a blog:
+
 1. Create `_posts/` directory
 2. Add posts with naming: `YYYY-MM-DD-title.md`
 3. Use `layout: single` in post front matter
 4. Create blog index page
 
 ### Contact Form
+
 Consider integrating:
+
 - Formspree
 - Netlify Forms (if migrating from GitHub Pages)
 - Google Forms embed
 
 ### Advanced Features
+
 - Google Analytics integration
 - Search functionality
 - Comments (Disqus, utterances, or giscus)
@@ -478,6 +509,7 @@ Consider integrating:
 **Chosen Skin:** `default`
 
 The **default** skin provides a clean, professional look with:
+
 - Classic white/gray color scheme
 - High readability and accessibility
 - Professional business appearance
@@ -485,6 +517,7 @@ The **default** skin provides a clean, professional look with:
 - Wide browser compatibility
 
 This skin is configured in `_config.yml` as:
+
 ```yaml
 minimal_mistakes_skin: "default"
 ```
@@ -543,4 +576,4 @@ minimal_mistakes_skin: "default"
 
 ---
 
-*Last Updated: 2026-07-04*
+_Last Updated: 2026-07-04_

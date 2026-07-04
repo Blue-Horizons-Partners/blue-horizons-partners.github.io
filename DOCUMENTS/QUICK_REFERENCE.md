@@ -1,4 +1,5 @@
 # Minimal Mistakes Theme - Quick Reference
+
 ## Blue Horizons Partners Website
 
 ---
@@ -6,21 +7,23 @@
 ## Essential Images Summary
 
 ### Must-Have Images (Priority 1)
-| Image | Dimensions | File | Purpose |
-|-------|------------|------|---------|
-| **Logo** | 88×88px | `logo.png` | Site header |
-| **Bio Photo** | 200×200px | `bio-photo.jpg` | Author sidebar |
-| **OG Image** | 1200×630px | `og-image.jpg` | Social sharing |
-| **Hero Banner** | 1280×720px | `hero-banner.jpg` | Homepage background |
-| **About Header** | 1280×720px | `about-header.jpg` | About page |
+
+| Image            | Dimensions | File               | Purpose             |
+| ---------------- | ---------- | ------------------ | ------------------- |
+| **Logo**         | 88×88px    | `logo.png`         | Site header         |
+| **Bio Photo**    | 200×200px  | `bio-photo.jpg`    | Author sidebar      |
+| **OG Image**     | 1200×630px | `og-image.jpg`     | Social sharing      |
+| **Hero Banner**  | 1280×720px | `hero-banner.jpg`  | Homepage background |
+| **About Header** | 1280×720px | `about-header.jpg` | About page          |
 
 ### Recommended Images (Priority 2)
-| Image | Dimensions | File | Purpose |
-|-------|------------|------|---------|
-| **Services Header** | 1280×720px | `services-header.jpg` | Services page |
-| **Feature 1** | 600×400px | `feature-consulting.jpg` | Homepage feature |
-| **Feature 2** | 600×400px | `feature-partnerships.jpg` | Homepage feature |
-| **Feature 3** | 600×400px | `feature-innovation.jpg` | Homepage feature |
+
+| Image               | Dimensions | File                       | Purpose          |
+| ------------------- | ---------- | -------------------------- | ---------------- |
+| **Services Header** | 1280×720px | `services-header.jpg`      | Services page    |
+| **Feature 1**       | 600×400px  | `feature-consulting.jpg`   | Homepage feature |
+| **Feature 2**       | 600×400px  | `feature-partnerships.jpg` | Homepage feature |
+| **Feature 3**       | 600×400px  | `feature-innovation.jpg`   | Homepage feature |
 
 ---
 
@@ -52,6 +55,7 @@ bundle exec jekyll serve
 **Selected Skin:** `default`
 
 Set in `_config.yml`:
+
 ```yaml
 minimal_mistakes_skin: "default"
 ```
@@ -62,7 +66,8 @@ The **default** skin provides a clean, professional appearance perfect for busin
 
 ## Key Configuration Settings
 
-### In _config.yml:
+### In \_config.yml:
+
 ```yaml
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
@@ -98,6 +103,7 @@ plugins:
 ## Page Layout Examples
 
 ### Splash Page (Homepage):
+
 ```yaml
 ---
 layout: splash
@@ -113,6 +119,7 @@ excerpt: "Strategic Partnerships & Innovative Solutions"
 ```
 
 ### Single Page (About, Services):
+
 ```yaml
 ---
 layout: single
@@ -130,6 +137,7 @@ author_profile: true
 ## Navigation Setup
 
 Create `_data/navigation.yml`:
+
 ```yaml
 main:
   - title: "Home"
@@ -189,27 +197,36 @@ blue-horizons-partners.github.io/
 ## Common Issues & Solutions
 
 ### 1. "Unknown tag 'include_cached'" error
+
 **Solution:** Add to `_config.yml`:
+
 ```yaml
 plugins:
   - jekyll-include-cache
 ```
+
 Then run `bundle install`
 
 ### 2. Images not showing
-**Solution:** 
+
+**Solution:**
+
 - Check paths start with `/assets/images/`
 - Verify files exist in correct location
 - Clear browser cache
 
 ### 3. Changes not appearing
+
 **Solution:**
+
 - Restart Jekyll server (`Ctrl+C`, then `bundle exec jekyll serve`)
 - For `_config.yml` changes, restart is always required
 - Clear browser cache
 
 ### 4. Site looks broken
+
 **Solution:**
+
 - Ensure `remote_theme` is set correctly
 - Check all required plugins are installed
 - Verify `_data/navigation.yml` exists
@@ -219,6 +236,7 @@ Then run `bundle install`
 ## Testing Checklist
 
 Before deploying:
+
 - [ ] All pages load without errors
 - [ ] Navigation menu works
 - [ ] Images display correctly
@@ -257,8 +275,8 @@ GitHub Pages will automatically rebuild your site (takes 1-5 minutes).
 1. ✅ Review implementation plan
 2. ⬜ Gather/create 5 essential images
 3. ⬜ Back up current site
-4. ⬜ Update Gemfile and _config.yml
-5. ⬜ Create _pages directory and migrate content
+4. ⬜ Update Gemfile and \_config.yml
+5. ⬜ Create \_pages directory and migrate content
 6. ⬜ Add images to assets/images/
 7. ⬜ Test locally
 8. ⬜ Deploy to GitHub Pages
@@ -268,6 +286,7 @@ GitHub Pages will automatically rebuild your site (takes 1-5 minutes).
 ## Support
 
 If you run into issues:
+
 1. Check the [full implementation plan](./MINIMAL_MISTAKES_IMPLEMENTATION_PLAN.md)
 2. Review [Minimal Mistakes troubleshooting](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 3. Search [GitHub Issues](https://github.com/mmistakes/minimal-mistakes/issues)
@@ -275,4 +294,4 @@ If you run into issues:
 
 ---
 
-*Last Updated: 2026-07-04*
+_Last Updated: 2026-07-04_
