@@ -47,18 +47,16 @@ bundle exec jekyll serve
 
 ---
 
-## Recommended Theme Skins
+## Theme Skin Configuration
 
-Try these skins by setting in `_config.yml`:
+**Selected Skin:** `default`
+
+Set in `_config.yml`:
 ```yaml
-minimal_mistakes_skin: "default"  # Change this value
+minimal_mistakes_skin: "default"
 ```
 
-**For Blue Horizons Partners:**
-1. **"default"** - Clean, professional (white/gray)
-2. **"air"** - Blue theme (matches "horizons")
-3. **"contrast"** - Bold, modern look
-4. **"aqua"** - Ocean-inspired (matches "blue")
+The **default** skin provides a clean, professional appearance perfect for business websites. It features a classic white/gray color scheme with excellent readability.
 
 ---
 

@@ -60,8 +60,7 @@ repository: "Blue-Horizons-Partners/blue-horizons-partners.github.io"
 logo: "/assets/images/logo.png"  # 88x88px recommended
 
 # Site Skin (color scheme)
-minimal_mistakes_skin: "default"  
-# Options: "default", "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
+minimal_mistakes_skin: "default"  # Clean, professional look
 
 # Site Author
 author:
@@ -474,25 +473,23 @@ Consider integrating:
 
 ---
 
-## Skin Options
+## Theme Skin Selection
 
-Test different skins by changing `minimal_mistakes_skin` in `_config.yml`:
+**Chosen Skin:** `default`
 
-1. **default** - Clean, classic look (white/gray)
-2. **air** - Calm and blue
-3. **aqua** - Water-inspired colors
-4. **contrast** - Retro with bold blue links
-5. **dark** - Dark mode palette
-6. **dirt** - Earthy tones
-7. **mint** - Minty fresh green
-8. **neon** - Dark with neon accents
-9. **plum** - Purple theme
-10. **sunrise** - Orange and red tones
+The **default** skin provides a clean, professional look with:
+- Classic white/gray color scheme
+- High readability and accessibility
+- Professional business appearance
+- Works well with any image style
+- Wide browser compatibility
 
-**Recommendation for Blue Horizons Partners:** 
-- Start with **"default"** or **"contrast"** for professional look
-- **"aqua"** or **"air"** for blue-themed branding
-- **"dark"** for modern, sophisticated appearance
+This skin is configured in `_config.yml` as:
+```yaml
+minimal_mistakes_skin: "default"
+```
+
+**Note:** If you want to experiment with other skins in the future, options include: "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
 
 ---
 

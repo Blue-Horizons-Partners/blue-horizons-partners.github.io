@@ -338,13 +338,22 @@ For your site, search for:
 
 ## Notes on Color Scheme
 
-Consider your images working with these potential theme colors:
-- **Default skin:** White background, gray text, blue accents
-- **Air skin:** Blues and light colors
-- **Contrast skin:** White/dark with bold blue links
-- **Professional recommendation:** Keep images with neutral tones that work across skins
+**Selected Theme Skin:** `default`
 
-Ensure hero/header images have enough contrast for white text overlay.
+The **default** skin uses:
+- White background
+- Gray text
+- Blue accents
+
+**Image Considerations:**
+- Choose images with neutral to cool tones
+- Ensure hero/header images have enough contrast for white text overlay
+- Consider images with professional business settings, modern offices, or abstract blue/gray elements
+- Avoid images that are too busy or have conflicting color schemes
+
+**Overlay Recommendations:**
+- Use dark overlay (0.5 opacity) on hero images to ensure white text readability
+- For headers without images, solid color overlays work well: `#5e616c` (gray) or `#1976D2` (blue)
 
 ---
 

@@ -35,7 +35,7 @@ To launch the site, you'll need these 5 images:
 
 See [Image Requirements](./DOCUMENTS/IMAGE_REQUIREMENTS.md) for complete details and optional images.
 
-### 🎨 Theme Features
+### 🎨 Theme Configuration
 
 The Minimal Mistakes theme provides:
 
@@ -43,7 +43,7 @@ The Minimal Mistakes theme provides:
 - ✅ Multiple layout options (splash, single, archive, home)
 - ✅ Built-in SEO optimization
 - ✅ Social media integration
-- ✅ Customizable color schemes (skins)
+- ✅ **Selected Skin:** `default` (clean, professional look)
 - ✅ Author profiles and sidebars
 - ✅ Google Analytics support
 - ✅ Comments integration options

@@ -311,24 +311,22 @@ header:
 
 ---
 
-## Example Color Schemes with Image Considerations
+## Selected Color Scheme
 
-### Option 1: Blue Theme (Matches Brand Name)
-- **Skin:** "air" or "aqua"
-- **Images:** Use images with blue tones, sky, water, horizons
-- **Hero overlay:** Light blue with white text
+**Theme Skin:** `default` (Professional Gray/Blue)
 
-### Option 2: Professional Gray/Blue
-- **Skin:** "default" or "contrast"
-- **Images:** Modern office, cityscapes, business meetings
-- **Hero overlay:** Dark gray or blue with white text
+### Design Approach:
+- **Skin:** "default" - Clean, professional appearance
+- **Images:** Modern office, cityscapes, business meetings, professional settings
+- **Hero overlay:** Dark gray or blue overlay with white text for readability
+- **Color palette:** White/gray with blue accents
 
-### Option 3: Bold Modern
-- **Skin:** "dark" or "neon"
-- **Images:** High contrast, bold colors, technology
-- **Hero overlay:** Dark with bright accent colors
-
-**Recommendation:** Start with "default" or "air" skin, adjust based on your actual images.
+### Why This Works:
+- Professional business appearance
+- High readability and accessibility
+- Works well with various image styles
+- Clean, timeless design
+- Focuses attention on content and images
 
 ---
 
