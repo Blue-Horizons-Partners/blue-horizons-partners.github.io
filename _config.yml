@@ -5,7 +5,7 @@ description: >-
 baseurl: ""
 url: "https://blue-horizons-partners.github.io"
 
-logo: "https://github.com/Blue-Horizons-Partners.png"
+logo: "/assets/images/blue-horizons-logo.jpg"
 minimal_mistakes_skin: default
 
 contact:
